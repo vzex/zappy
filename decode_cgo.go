@@ -11,7 +11,7 @@
 package zappy
 
 import (
-	"github.com/cznic/internal/buffer"
+	"github.com/vzex/internal/buffer"
 )
 
 /*
