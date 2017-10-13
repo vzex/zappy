@@ -13,7 +13,7 @@ package zappy
 import (
 	"encoding/binary"
 
-	"github.com/cznic/internal/buffer"
+	"github.com/vzex/internal/buffer"
 )
 
 func puregoDecode() bool { return true }
