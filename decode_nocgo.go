@@ -77,7 +77,13 @@ func Decode(buf, src []byte) ([]byte, error) {
 			return nil, ErrCorrupt
 		}
 
+		if offset < 0 {
+			return nil, ErrCorrupt
+		}
 		for s, v := range buf[d-offset : end-offset] {
+			if d+s >= len(buf) {
+				return nil, ErrCorrupt
+			}
 			buf[d+s] = v
 		}
 		d = end

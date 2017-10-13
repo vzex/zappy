@@ -15,7 +15,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/cznic/internal/buffer"
+	"github.com/vzex/internal/buffer"
 )
 
 func puregoEncode() bool { return true }
