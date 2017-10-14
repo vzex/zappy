@@ -50,7 +50,7 @@ func Decode(buf, src []byte) ([]byte, error) {
 		s += i
 		if n >= 0 {
 			length = int(n + 1)
-			if length > len(buf)-d || length > len(src)-s {
+			if length <=0 || length > len(buf)-d || length > len(src)-s {
 				return nil, ErrCorrupt
 			}
 
